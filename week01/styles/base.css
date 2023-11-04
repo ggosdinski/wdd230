@@ -5,10 +5,11 @@ body {
 }
 
 
-nav {
-    color: white;
-}
 
+a{
+    color: white;
+    text-decoration: none;
+}
 
 .flag {
     position: relative;
