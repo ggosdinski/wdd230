@@ -1,0 +1,15 @@
+@media screen and (min-width: 500px){
+    /*Cuando la pantalla tenga 500px de ancho O MAS*/
+    header{
+        background-color: black;
+        color: white;
+    }
+
+    main{
+        grid-template-columns: 1fr, 1fr;
+    }
+
+    section{
+        color:  rgb(6, 75, 118)
+    }
+}
