@@ -1,0 +1,23 @@
+body {
+    font-family: "Roboto", sans-serif;
+    color:  white;
+    background-color: black;
+}
+
+
+
+
+
+.flag {
+    position: relative;
+    display: inline-block;
+    margin: 0 10px; /* Espacio entre la bandera y el párrafo */
+  }
+
+  .flag img {
+    width: 50px; /* Ancho de la bandera */
+    height: auto; /* Altura ajustada automáticamente */
+    position: absolute;
+    top: -20px; /* Ajusta la posición vertical de la bandera */
+    left: 0; /* Ajusta la posición horizontal de la bandera */
+  }
