@@ -1,0 +1,37 @@
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+#color-1 {
+    background-color: #231651;
+}
+
+#color-2 {
+    background-color: #8EA8C3;
+}
+
+#color-3 {
+    background-color: #CBF7ED;
+}
+
+#color-4 {
+    background-color: #F5B700;
+}
+
+#color-5 {
+    background-color: #DC0073;
+}
+
+.color-box {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+img {
+    max-width: 100%; /* Asegura que la imagen no se extienda más allá de su contenedor */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    display: block; /* Elimina cualquier espacio no deseado debajo de la imagen */
+    margin: 0 auto; /* Centra la imagen horizontalmente en su contenedor */
+}
