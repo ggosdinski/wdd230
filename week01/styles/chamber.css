@@ -2,6 +2,14 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+h1,p{
+    color: #231651;
+}
+
+h2{
+    color: #8EA8C3;
+}
+
 #color-1 {
     background-color: #231651;
 }
