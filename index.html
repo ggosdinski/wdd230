@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gianfranco Gosdinski - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development. Gianfranco Gosdinski. Course Homepage development.">
+    <meta name="author" content="Gianfranco Gosdinski">
+    <link rel="stylesheet" href="./week01/styles/base.css">
+    <link rel="stylesheet" href="./week01/styles/larger.css"> 
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img class="Profile" src="./week01/images/fotoCV.jpeg" alt="Profile Picture">
+            <h1>Gianfranco Gosdinski</h1>
+        </div>
+        <nav class="nav">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Chamber</a></li>
+              <li><a href="#">Site Plan</a></li>
+              <li><a href="#">Form</a></li>
+            </ul>
+          </nav>
+    </header>
+    <main>
+        <h2>WDD 230: Web Frontend Development</h2>
+        <div class="cards-container">
+          <section class="card large-card">
+            <h3>Learning Activities</h3>
+            <ul>
+              <li><a href="#">Week 01:</a></li>
+              <li><a href="#">Week 02:</a></li>
+              <li><a href="#">Week 03:</a></li>
+              <li><a href="#">Week 04:</a></li>
+              <li><a href="#">Week 05:</a></li>
+              <li><a href="#">Week 06:</a></li>
+            </ul>
+          </section>
+          <section class="card small-card">
+            <h3>Information</h3>
+            <div>
+              <label for="weather">Weather:</label>
+              <div id="weather">Sunny</div>
+            </div>
+            <div>
+              <label for="visits">Page visits:</label>
+              <div id="visits">15</div>
+            </div>
+          </section>
+        </div>
+      </main>
+      
+        <footer>
+            <div class="footer-top">
+                <p>&copy;<span id="currentYear"></span></p>
+            </div>
+            <p class="name-footer">Gianfranco Gosdinski</p>
+            <div class="footer-bottom">
+                <div class="city">
+                    <p>Lima, Peru</p>
+                </div>
+                <div class="flag">
+                    <img src="./images/peru_flag.png" alt="Peru Flag">
+                </div>
+            </div>
+            <p id="lastModified">Last Modification:</p>
+        </footer>
+        <script src="./scripts/getDates.js"></script>
+</body>
+</html>
