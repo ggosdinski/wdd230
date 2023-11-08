@@ -10,24 +10,22 @@
         margin-right: 30px;
     }
 
-    .nav{
-        display: inline;
-    }
-
     main {
         max-width: 100%;
+       /*  display: grid;
+        grid-template-columns: 2fr, 1fr; */
     }
     
+    h2{
+      text-align: left;
+      margin-left: 15px;
+    }
+
     footer{
         max-width: 100%;
     }
 
-  /*   main {
-        margin: 1rem auto;
-      }
-       */
-
-      .cards-container {
+    .cards-container {
         display: grid;
         grid-template-columns: 2fr 1fr; 
         grid-gap: 20px; 
