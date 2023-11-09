@@ -16,11 +16,32 @@
         grid-template-columns: 2fr, 1fr; */
     }
     
+    #menu {
+      display: none; /* hide hamburger button */
+    }
+
+    .nav{
+      flex-direction: row;
+    }
+  
+    .nav li {
+      display: block;
+      flex: 1 1 100%;
+    }
+
     h2{
       text-align: left;
       margin-left: 15px;
     }
 
+    .open li {
+      display: block;
+      width: 100%;
+    }
+    .open li a {
+      display: block;
+    }
+    
     footer{
         max-width: 100%;
     }
