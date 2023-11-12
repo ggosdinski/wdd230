@@ -1,8 +1,10 @@
 @media (min-width: 651px) {
     header {
-        display: flex;
+      /*   display: flex;
         max-width: 100%;
-        margin: 1rem auto;
+        margin: 1rem auto; */
+       /*  display: grid; */
+        max-width: 100%;
     }
 
     .header-content img {
@@ -10,24 +12,38 @@
         margin-right: 30px;
     }
 
+  /*   nav {
+      max-width: 100%;
+    }
+ */
+
     main {
         max-width: 100%;
        /*  display: grid;
         grid-template-columns: 2fr, 1fr; */
     }
     
+    main h2{
+      text-align: center;
+    }
+
     #menu {
       display: none; /* hide hamburger button */
     }
 
-    .nav{
+  /*   .nav{
       flex-direction: row;
-    }
+    } */
   
-    .nav li {
+  /*   .nav li {
       display: block;
       flex: 1 1 100%;
-    }
+    } */
+
+ /*    main ul a{
+      text-align: left;
+  }
+ */
 
     h2{
       text-align: left;
@@ -52,14 +68,11 @@
         grid-gap: 20px; 
       }
       
-      .card {
+   /*    .card {
         padding: 1rem;
-      }
+      } */
      
-    main ul a{
-        text-align: left;
-    }
-
+ 
     footer {
         display: flex;
         justify-content: center;
