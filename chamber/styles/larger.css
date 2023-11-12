@@ -1,0 +1,93 @@
+@media (min-width: 768px) {
+    #grid-container {
+        padding: 40px; 
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        grid-column: span 12;
+    }
+
+ nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 0 15px;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .hero-image:hover {
+        transform: scale(1.05); 
+        filter: saturate(1.5); 
+        box-shadow: 0 0 8px rgba(245, 183, 0, 0.5);
+    }
+    
+    main, section, footer {
+        grid-column: span 12;
+    }
+    .cta-button {
+        grid-column: 4 / span 6;
+    }
+
+    .first-section,
+    .second-section {
+        grid-column: span 6;
+    }
+    
+    footer {
+        text-align: center;
+        color: white;
+        background-color: #231651;
+        padding: 10px; 
+    }
+    
+    .footer-container {
+        display: flex;
+        justify-content: space-around;
+        /* Elimina el margen inferior utilizado en dispositivos móviles */
+        margin-bottom: 0;
+    }
+    
+    .contact-info,
+    .development-info {
+        text-align: left;
+        margin-bottom: 10px; /* Ajusta según sea necesario */
+    }
+    
+    .contact-info h3,
+    .development-info h3 {
+        border-bottom: 2px solid white;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+    }
+    
+    .contact-info p:last-child,
+    .development-info p:last-child {
+        margin-bottom: 0;
+    }
+    
+    /* Media query para pantallas grandes */
+    @media (min-width: 768px) {
+        .contact-info,
+        .development-info {
+            /* Cambia la orientación a horizontal */
+            flex: 1;
+        }
+    
+        .contact-info {
+            margin-right: 10px; /* Agrega espacio entre los elementos */
+        }
+    }
+    
+}
