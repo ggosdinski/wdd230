@@ -23,6 +23,7 @@ header, nav, main, section, footer {
 
 .menu-toggle{
     margin-top: 15px;
+    
 }
 
 nav ul{
@@ -31,6 +32,7 @@ nav ul{
     padding: 0 ;
     margin: 0;
     display: none;
+   /*  align-items: center; */
 }
 
 nav li {
