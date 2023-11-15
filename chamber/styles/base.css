@@ -47,7 +47,7 @@ nav li a{
 
 .hero-image {
     grid-column: span 12;
-    background-image: url('/chamber/images/bsas.jpg');
+    background-image: url('./chamber/images/bsas.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
