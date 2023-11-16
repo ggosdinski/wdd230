@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,35 +9,52 @@
     <meta name="author" content="Gianfranco Gosdinski">
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/base.css">
-    <link rel="stylesheet" href="./styles/larger.css"> 
+    <link rel="stylesheet" href="./styles/larger.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-    <link rel="icon" href="./week01/images/favicon.ico"">
+    <link rel="icon" href="./week01/images/favicon.ico">
     <meta property="og:title" content="Gianfranco Gosdinski - WDD 230 - Web Frontend Development">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://www.freepik.es/foto-gratis/toma-aerea-hermosa-aldea-montana-capturada-machu-picchu-peru_10292210.htm#query=lima%20peru&position=11&from_view=search&track=ais">
+    <meta property="og:image" content="https://www.freepik.es/foto-gratis/toma-aerea-hermosa-aldea-montana-capturada-machu-picchu-peru_10292210.htm#query=lima%20peru&position=11&from_view=search&track=ais"> 
     <meta property="og:url" content="https://ggosdinski.github.io/wdd230/index.html">
 </head>
+
 <body>
     <header>
-      <div id="mode">
-        🕶️
-      </div>
+        <div id="mode">
+            🕶️
+        </div>
         <div class="header-content">
-            <img class="Profile" src="./week01/images/photo.jpeg" alt="Profile Picture">
+            <img class="Profile" src="./week01/images/photo.webp" alt="Profile Picture">
             <h1>Gianfranco Gosdinski</h1>
         </div>
         <nav class="nav">
-          <button id="menu"></button>
-            <ul class="nav-ul" >
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#">Chamber</a></li>
-              <li><a href="#">Site Plan</a></li>
-              <li><a href="#">Form</a></li>
+            <button id="menu"></button>
+            <ul class="nav-ul">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">Site Plan</a></li>
+                <li><a href="#">Form</a></li>
             </ul>
-          </nav>
+        </nav>
     </header>
+
     <main>
-        <h2>WDD 230: Web Frontend Development</h2>
+        <div class="hero-image">
+            <picture>
+               
+                <source media="(max-width: 400px)" srcset="./week03/images/hero-small.webp">
+
+               
+                <source media="(min-width: 401px) and (max-width: 960px)" srcset="./week03/images/hero-large.webp">
+
+                
+                <img src="./week03/images/hero-large.webp" alt="Argentina, Temple">
+            </picture>
+            <div class="overlay-text">
+                Favorite Latter-day Temple
+            </div>
+        </div>
+
         <div class="cards-container">
           <section class="card large-card">
             <h3>Learning Activities</h3>
@@ -59,16 +77,22 @@
             <div>
               <label for="weather">Weather:</label>
               <div id="weather">Sunny</div>
+              <div class="page-visit-counter">
+                <p>Page Visits: <span id="visitCount">0</span></p>
+              </div>
             </div>
-            <div>
+          <!--   <div>
               <label for="visits">Page visits:</label>
               <div id="visits">15</div>
-            </div>
+            </div> -->
           </section>
         </div>
       </main>
-      
-        <footer>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d499488.9826696951!2d-77.31746604205954!3d-12.025773225911701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c5f619ee3ec7%3A0x14206cb9cc452e4a!2sLima!5e0!3m2!1ses-419!2spe!4v1700172167284!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
+      <footer>
             <div class="footer-top">
                 <p>&copy;<span id="currentYear"></span></p>
             </div>
@@ -82,7 +106,7 @@
                 </div>
             </div>
             <p id="lastModified">Last Modification:</p>
-        </footer>
-        <script src="./week01/scripts/getDates.js"></script>
+      </footer>
+      <script src="./week01/scripts/getDates.js"></script>
 </body>
 </html>

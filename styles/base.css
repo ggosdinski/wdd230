@@ -126,6 +126,42 @@ main {
     color:  white;
 }
 
+
+.hero-image picture,
+.hero-image img {
+  max-width: 100%; /* Hace que la imagen se ajuste al ancho del contenedor */
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho disponible */
+  height: auto; /* Permite que la altura se ajuste automáticamente */
+
+}
+
+.hero-image {
+    position: relative; /* Establece el contexto para posicionar el texto */
+    max-width: 100%; /* Ajusta el ancho máximo */
+}
+
+
+.overlay-text {
+    position: absolute; /* Posiciona el texto de forma absoluta dentro del contenedor */
+    bottom: 20px; /* Ajusta la distancia desde la parte inferior del contenedor */
+    left: 50%; /* Lo sitúa horizontalmente centrado */
+    transform: translateX(-50%); /* Centra el texto horizontalmente */
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+  
+iframe {
+    width: 100%; /* Asegura que el mapa ocupe todo el ancho disponible */
+    height: 300px; /* Define una altura inicial para el mapa en pantallas móviles */
+    border: none;
+  }
+
+
 .card li{
     text-align: center;
 }

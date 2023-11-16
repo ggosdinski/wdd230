@@ -43,3 +43,29 @@ modeButton.addEventListener("click", () => {
 		modeButton.textContent = "🕶️";
 	}
 });
+
+
+function updateVisitCount() {
+  let count = localStorage.getItem('pageVisitCount');
+
+
+  count = count ? parseInt(count) + 1 : 1;
+
+ 
+  document.getElementById('visitCount').textContent = count;
+
+
+  localStorage.setItem('pageVisitCount', count.toString());
+}
+
+
+if (localStorage.getItem('pageVisitCount')) {
+
+  let count = localStorage.getItem('pageVisitCount');
+  document.getElementById('visitCount').textContent = count;
+} else {
+  
+  localStorage.setItem('pageVisitCount', '0');
+}
+
+updateVisitCount();
