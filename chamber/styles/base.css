@@ -9,21 +9,34 @@ body {
 
 #grid-container {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(4, 1fr); /* Reducción a 4 columnas */
     grid-template-rows: auto;
     grid-gap: 10px;
     padding: 20px;
 }
 
+/* .image-container img {
+    max-width: 100%;
+    height: auto;
+} */
 
-.sidebar {
+/* .sidebar {
     display: flex;
     flex-direction: column;
     gap: 20px;
     align-items: center; 
     justify-content: center; 
     text-align: center;
-    grid-column: span 12; 
+    grid-column: span 4; 
+}
+ */
+
+ .sidebar {
+    grid-column: span 1; /* Ocupa 1 columna */
+}
+
+.image-content {
+    grid-column: span 3; /* Ocupa 3 columnas */
 }
 
 .demographics-info,
@@ -45,7 +58,7 @@ body {
 }
 
 header, nav, main, section, footer {
-    grid-column: span 12;
+    grid-column: span 4;
     padding: 10px;
    
 }
@@ -75,7 +88,7 @@ nav li a{
 }
 
 .hero-image {
-    grid-column: span 12;
+    grid-column: span 4;
     background-image: url('https://ggosdinski.github.io/wdd230/chamber/images/bsas.jpg');
     background-size: cover;
     background-position: center;
@@ -105,8 +118,8 @@ h2{
 }
 
 .cta-button {
-    grid-column: 4 / span 6; 
-    background-color:#DC0073;
+    grid-column: 1 / span 4; /* Ajuste para que ocupe las 4 columnas */
+    background-color: #DC0073;
     color: #CBF7ED;
     padding: 10px;
     border: none;
@@ -114,6 +127,7 @@ h2{
     text-decoration: none;
     text-align: center;
     transition: background-color 0.8s ease;
+    justify-self: center; /* Alineación horizontal centrada */
 }
 
 .cta-button:hover {
@@ -121,7 +135,7 @@ h2{
 }
 
 section{
-    grid-column: span 12;
+    grid-column: span 4;
     color: #8EA8C3;
 }
 

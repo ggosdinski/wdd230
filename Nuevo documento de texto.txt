@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce of Buenos Aires</title>
+    <meta name="description" content="Home page of the Chamber of Commerce of Buenos Aires, Argentina.">
+    <meta name="author" content="Gianfranco Gosdinski">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/larger.css"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="icon" href="./images/favicon.ico">
+    <meta property="og:title" content="Chamber of Commerce of Buenos Aires">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.freepik.es/fotos-premium/vista-aerea-obelisco-buenos-aires-dron_29416359.htm#query=argentina&position=17&from_view=search&track=sph">
+    <meta property="og:url" content="https://ggosdinski.github.io/wdd230/index.html">
+</head>
+<body>
+    <div id="grid-container">
+        <header>
+            <h1>Header
+              <div class="menu-toggle">&#9776;</div>
+            </h1>
+            <nav>
+                <ul class="menu">
+                    <li><a href="">Home</a></li>
+                    <li><a href="https://ggosdinski.github.io/wdd230/chamber/discover.html#">Discover</a></li>
+                    <li><a href="">Directory</a></li>
+                    <li><a href="">Join</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="hero-image">Hero Image</div>
+
+        <main>
+            <h2>Main</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti explicabo aut rem, doloribus ullam amet quae obcaecati quo sed deserunt hic id quisquam inventore possimus cum, odio a? Illo, sit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos cupiditate libero possimus distinctio porro et doloribus, debitis qui facere corrupti culpa beatae accusantium quos, suscipit numquam nihil deserunt quaerat nesciunt. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta sint ducimus id animi porro. Dignissimos officia hic corrupti iusto porro omnis corporis accusantium unde repudiandae fugit, laborum eum delectus architecto!</p>
+        </main>
+        <a href="#" class="cta-button">Join the Chamber</a>
+
+        <section class="first-section">
+            <p>Events</p>
+        </section>
+
+        <section class="second-section">
+            <p>Weather</p>
+        </section>
+
+        <section class="last-Section">
+          <p>Advertisements</p>
+        </section>
+
+        <footer>
+          <div class="footer-container">
+              <div class="contact-info">
+                  <h3>Contact Information</h3>
+                  <p>Gianfranco Gosdinski</p>
+                  <p>Email: gianfranco.gosdinski@icloud.com</p>
+                  <p>Phone: +123 456 789</p>
+              </div>
+              <div class="development-info">
+                  <h3>Development Information</h3>
+                  <p>Project: WDD 230 - Chamber of Commerce</p>
+                  <p>Last Modified: <span id="lastModified"></span></p>
+              </div>
+          </div>
+      </footer>      
+    </div>
+    <script src="./scripts/chamber.js"></script>
+</body>
+</html>
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    place-items: center;
+    color: white;
+    background-color: #24334A;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    padding: 20px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+img {
+    loading: lazy;
+}
+
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+    grid-column: span 12; 
+}
+
+.demographics-info,
+.attractions-info,
+.statistics-info {
+    width: 100%; 
+    max-width: 90%; 
+}
+
+.demographics-info p,
+.attractions-info p,
+.statistics-info p {
+    text-align: left;
+}
+
+.image-container img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+header, nav, main, section, footer {
+    grid-column: span 12;
+    padding: 10px;
+   
+}
+
+.menu-toggle{
+    margin-top: 15px;
+    
+}
+
+nav ul{
+    list-style-type: none;
+    text-decoration: none;
+    padding: 0 ;
+    margin: 0;
+    display: none;
+   /*  align-items: center; */
+}
+
+nav li {
+    margin: 0;
+}
+
+nav li a{
+    color: white;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.hero-image {
+    grid-column: span 12;
+    background-image: url('https://ggosdinski.github.io/wdd230/chamber/images/bsas.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    transition: transform 0.8s ease, filter 0.8s ease;
+    box-shadow: 0 0 8px rgba(245, 183, 0, 0.5);
+}
+
+/* .hero-image:hover {
+    transform: scale(1.1); 
+    filter: saturate(1.5); 
+}
+ */
+
+main p {
+    margin-bottom: 20px;
+}
+
+h2{
+    color: #8EA8C3;
+}
+
+.cta-button {
+    grid-column: 4 / span 6; 
+    background-color:#DC0073;
+    color: #CBF7ED;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.8s ease;
+}
+
+.cta-button:hover {
+    background-color: #960053; /* Color de fondo al pasar el ratón por encima */
+}
+
+section{
+    grid-column: span 12;
+    color: #8EA8C3;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    background-color:#24334A;
+    padding: 10px; 
+}
+
+.footer-container {
+    /* Elimina el uso de flex y agrega margen inferior para separar los dos bloques */
+    margin-bottom: 10px;
+}
+
+/* Estilo para ambas secciones */
+.contact-info,
+.development-info {
+    text-align: left;
+    margin-bottom: 10px; /* Ajusta según sea necesario */
+}
+
+/* Añade espacio después del borde inferior */
+.contact-info h3,
+.development-info h3 {
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+/* Agrega un espacio adicional después del último párrafo para evitar que el borde esté muy cerca del texto */
+.contact-info p:last-child,
+.development-info p:last-child {
+    margin-bottom: 0;
+}
+
+
+
+
+@media (min-width: 768px) {
+    nav {
+        display: flex;
+        justify-content: flex-start; 
+        align-items: center;
+        grid-column: span 12;
+    }
+    
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    nav li {
+        margin: 0 15px;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .hero-image:hover {
+        transform: scale(1.05);
+        filter: saturate(1.5);
+        box-shadow: 0 0 8px rgba(245, 183, 0, 0.5);
+    }
+    
+    .sidebar {
+        width: 25%; 
+        position: fixed;
+        height: 100vh;
+        overflow-y: auto;
+        top: 50px; 
+        max-height: calc(100vh - 50px); 
+    }
+
+    .mainContent {
+        width: 75%; 
+        margin-left: 25%; 
+    }
+    
+    main,
+    section,
+    footer {
+        grid-column: span 12;
+    }
+
+    .mainContent .image-container:hover img {
+        /* Your chosen hover effect styles */
+        opacity: 0.8; /* For example, reduce opacity on hover */
+        transition: opacity 0.3s ease; /* Smooth transition effect */
+        /* Add more hover effect styles as needed */
+    }
+
+    .cta-button {
+        grid-column: 4 / span 6;
+    }
+
+    .first-section,
+    .second-section {
+        grid-column: span 6;
+    }
+
+    footer {
+        text-align: center;
+        color: white;
+        background-color: #24334A;
+        padding: 10px;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: space-around;
+        
+        margin-bottom: 0;
+    }
+
+    .contact-info,
+    .development-info {
+        text-align: left;
+        margin-bottom: 10px; 
+    }
+
+    .contact-info h3,
+    .development-info h3 {
+        border-bottom: 2px solid white;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+    }
+
+    .contact-info p:last-child,
+    .development-info p:last-child {
+        margin-bottom: 0;
+    }
+
+    .contact-info,
+    .development-info {
+        /* Cambia la orientación a horizontal */
+        flex: 1;
+    }
+
+    .contact-info {
+        margin-right: 10px; /* Agrega espacio entre los elementos */
+    }
+}
+
+

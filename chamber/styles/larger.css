@@ -1,10 +1,16 @@
 @media (min-width: 768px) {
+    #grid-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+        padding: 20px;
+    }
     nav {
         display: flex;
         justify-content: flex-start; 
         align-items: center;
-        grid-column: span 12;
-    }
+        grid-column: span 4;
+    } 
     
     nav ul {
         display: flex;
@@ -20,6 +26,12 @@
         margin: 0 15px;
     }
 
+    .menu a.active {
+        font-weight: bold; /* Cambia el estilo del enlace activo */
+        color: #DC0073; /* Cambia el color del texto para el enlace activo */
+        /* Otros estilos para resaltar el enlace activo */
+    }
+
     .menu-toggle {
         display: none;
     }
@@ -30,25 +42,26 @@
         box-shadow: 0 0 8px rgba(245, 183, 0, 0.5);
     }
     
-    .sidebar {
-        width: 25%; 
-        position: fixed;
-        height: 100vh;
-        overflow-y: auto;
-        top: 50px; 
-        max-height: calc(100vh - 50px); 
+    .message-container {
+        margin: 0 auto; /* Para centrar horizontalmente */
     }
 
-    .mainContent {
-        width: 75%; 
-        margin-left: 25%; 
+    .sidebar {
+        grid-column: span 1; /* Ocupa 1 columna */
+        
     }
+
+    .image-content {
+        grid-column: span 3; /* Ocupa 3 columnas */
+    }
+
     
-    main,
+    
+  /*   main,
     section,
     footer {
-        grid-column: span 12;
-    }
+        grid-column: span 4;
+    } */
 
     .mainContent .image-container:hover img {
         /* Your chosen hover effect styles */
@@ -58,12 +71,19 @@
     }
 
     .cta-button {
-        grid-column: 4 / span 6;
+        grid-column: 1 / span 4; /* Ocupa todas las 4 columnas */
+        margin: 0 auto; /* Para centrar horizontalmente */
     }
 
+    /* Secciones primera y segunda */
     .first-section,
     .second-section {
-        grid-column: span 6;
+        grid-column: span 2; /* Ocupan cada una el 50% del espacio */
+    }
+
+    /* Sección final ocupa toda la pantalla */
+    .last-section {
+        grid-column: span 4; /* Ocupa todas las columnas disponibles */
     }
 
     footer {
