@@ -67,5 +67,40 @@ if (localStorage.getItem('pageVisitCount')) {
   
   localStorage.setItem('pageVisitCount', '0');
 }
-
 updateVisitCount();
+
+//FORMULARIO
+function showRatingValue() {
+  const ratingInput = document.getElementById("page_rating");
+  const ratingValue = document.getElementById("rating_value");
+  ratingValue.textContent = ratingInput.value;
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  showRatingValue(); // Llamar a la función para mostrar el valor inicial
+});
+
+function checkPasswordMatch() {
+  const password = document.getElementById("password");
+  const confirm_password = document.getElementById("confirm_password");
+  const password_error = document.getElementById("password_error");
+
+  if (password.value !== confirm_password.value) {
+    password_error.style.display = "inline";
+    password.value = "";
+    confirm_password.value = "";
+    password.focus();
+  } else {
+    password_error.style.display = "none";
+  }
+}
+
+document.getElementById('myForm').addEventListener('submit', function(event) {
+  const emailInput = document.getElementById('email');
+  if (!emailInput.checkValidity()) {
+    event.preventDefault();
+    alert('Please enter a valid email address from byui.edu domain');
+  }
+});
+
+

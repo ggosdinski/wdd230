@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gianfranco Gosdinski - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development. Gianfranco Gosdinski. Course Homepage development.">
+    <meta name="author" content="Gianfranco Gosdinski">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/larger.css">
+    <link rel="stylesheet" href="./styles/form.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="icon" href="./week01/images/favicon.ico">
+    <meta property="og:title" content="Gianfranco Gosdinski - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.freepik.es/foto-gratis/toma-aerea-hermosa-aldea-montana-capturada-machu-picchu-peru_10292210.htm#query=lima%20peru&position=11&from_view=search&track=ais"> 
+    <meta property="og:url" content="https://ggosdinski.github.io/wdd230/index.html">
+</head>
+
+<body>
+    <header>
+        <div id="mode">
+            🕶️
+        </div>
+        <div class="header-content">
+            <img class="Profile" src="./week01/images/photo.webp" alt="Profile Picture">
+            <h1>Gianfranco Gosdinski</h1>
+        </div>
+        <nav class="nav">
+            <button id="menu"></button>
+            <ul class="nav-ul">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">Site Plan</a></li>
+                <li><a href="#">Form</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form action="record.html" method="get" id="myForm">
+
+            <div class="form-group">
+              <label for="username">Username:</label>
+              <input type="text" id="username" name="username" required>
+            </div>
+          
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address from byui.edu domain">
+            </div>
+          
+            <div class="form-group">
+              <label for="confirm_password">Confirm Password:</label>
+              <input type="password" id="confirm_password" name="confirm_password" required oninput="checkPasswordMatch()">
+              <span id="password_error" class="error-message">Passwords do not match!</span>
+            </div>
+          
+            <div class="form-group">
+                <label for="page_rating">Page Rating:</label>
+                <input type="range" id="page_rating" name="page_rating" min="1" max="10" step="1" oninput="showRatingValue()">
+                <span id="rating_value"></span>
+            </div>
+          
+            <div class="form-group">
+              <button type="submit">Submit</button>
+            </div>
+          
+          </form>
+    </main>
+    <footer>
+            <div class="footer-top">
+                <p>&copy;<span id="currentYear"></span></p>
+            </div>
+            <p class="name-footer">Gianfranco Gosdinski</p>
+            <div class="footer-bottom">
+                <div class="city">
+                    <p>Lima, Peru</p>
+                </div>
+                <div class="flag">
+                    <img src="./week01/images/peru_flag.png" alt="Peru Flag">
+                </div>
+            </div>
+            <p id="lastModified">Last Modification:</p>
+    </footer>
+    <script src="./scripts/getDates.js"></script>
+</body>
+</html>
