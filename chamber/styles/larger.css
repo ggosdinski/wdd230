@@ -42,48 +42,44 @@
         box-shadow: 0 0 8px rgba(245, 183, 0, 0.5);
     }
     
+    main{
+        display: grid;
+        grid-template-columns: 250px, auto;
+    }
+
     .message-container {
-        margin: 0 auto; /* Para centrar horizontalmente */
+       grid-column: 1 span 2;
     }
 
-    .sidebar {
-        grid-column: span 1; /* Ocupa 1 columna */
+   /*  .sidebar {
+        grid-column: span 1;
         
-    }
-
-    .image-content {
-        grid-column: span 3; /* Ocupa 3 columnas */
-    }
-
-    
-    
-  /*   main,
-    section,
-    footer {
-        grid-column: span 4;
     } */
 
+   /*  .image-content {
+        grid-column: span 3; 
+    } */
+ 
     .mainContent .image-container:hover img {
-        /* Your chosen hover effect styles */
-        opacity: 0.8; /* For example, reduce opacity on hover */
-        transition: opacity 0.3s ease; /* Smooth transition effect */
-        /* Add more hover effect styles as needed */
+        opacity: 0.8; 
+        transition: opacity 0.3s ease;
+       
     }
 
     .cta-button {
-        grid-column: 1 / span 4; /* Ocupa todas las 4 columnas */
-        margin: 0 auto; /* Para centrar horizontalmente */
+        grid-column: 1 / span 4; 
+        margin: 0 auto; 
     }
 
     /* Secciones primera y segunda */
     .first-section,
     .second-section {
-        grid-column: span 2; /* Ocupan cada una el 50% del espacio */
+        grid-column: span 2; 
     }
 
     /* Sección final ocupa toda la pantalla */
     .last-section {
-        grid-column: span 4; /* Ocupa todas las columnas disponibles */
+        grid-column: span 4; 
     }
 
     footer {
@@ -120,12 +116,12 @@
 
     .contact-info,
     .development-info {
-        /* Cambia la orientación a horizontal */
+        
         flex: 1;
     }
 
     .contact-info {
-        margin-right: 10px; /* Agrega espacio entre los elementos */
+        margin-right: 10px; 
     }
 }
 

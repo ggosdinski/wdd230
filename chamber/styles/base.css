@@ -15,22 +15,6 @@ body {
     padding: 20px;
 }
 
-/* .image-container img {
-    max-width: 100%;
-    height: auto;
-} */
-
-/* .sidebar {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center; 
-    justify-content: center; 
-    text-align: center;
-    grid-column: span 4; 
-}
- */
-
  .sidebar {
     grid-column: span 1; /* Ocupa 1 columna */
 }
