@@ -123,5 +123,65 @@
     .contact-info {
         margin-right: 10px; 
     }
+
+    form {
+        margin: 50px auto;
+        padding: 40px;
+        width: 90%; /* Aumenta más el ancho del formulario */
+        max-width: 800px; /* Establece un ancho máximo */
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        color: #333;
+        grid-column: span 1; /* Ocupar dos columnas en lugar de una */
+        grid-row: 1; /* Ubicar el formulario en la primera fila */
+    }
+    
+    form label {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 1.1em;
+    }
+
+    form input,
+    form textarea,
+    form select {
+        width: 100%;
+        padding: 12px;
+        margin-top: 10px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        font-size: 1em;
+    }
+
+    form .error-message {
+        display: none;
+        color: #e74c3c;
+        font-size: 0.9em;
+        margin-top: 8px;
+    }
+
+    form input[type="submit"] {
+        width: auto;
+        margin-top: 20px;
+        padding: 12px 20px;
+        font-size: 1em;
+        background-color: #3498db;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    form input[type="submit"]:hover {
+        background-color: #2980b9;
+    }
+    
+    section {
+        grid-column: span 2; /* Ocupar dos columnas */
+        grid-row: 1;/* Mover la sección de membresías al inicio del grid */
+    }
 }
+    
 

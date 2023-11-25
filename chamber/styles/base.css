@@ -155,3 +155,69 @@ footer {
 .development-info p:last-child {
     margin-bottom: 0;
 }
+
+/* Estilos para el formulario en dispositivos móviles */
+section p {
+    color: white;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+section li {
+    color: white;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+
+form {
+    margin: 20px;
+    padding: 20px;
+    width: 95%; /* Aumenta el ancho del formulario */
+    max-width: 100%; /* Establece un ancho máximo */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1em;
+}
+
+form input,
+form textarea,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+form .error-message {
+    display: none;
+    color: #e74c3c;
+    font-size: 0.8em;
+    margin-top: 6px;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    margin-top: 12px;
+    padding: 10px;
+    font-size: 1em;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #2980b9;
+}
