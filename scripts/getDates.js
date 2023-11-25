@@ -87,13 +87,13 @@ function checkPasswordMatch() {
 
   if (password.value !== confirm_password.value) {
     password_error.style.display = "inline";
-    password.value = "";
-    confirm_password.value = "";
-    password.focus();
+    confirm_password.classList.add("error");
   } else {
     password_error.style.display = "none";
+    confirm_password.classList.remove("error");
   }
 }
+
 
 document.getElementById('myForm').addEventListener('submit', function(event) {
   const emailInput = document.getElementById('email');
