@@ -42,23 +42,16 @@
         box-shadow: 0 0 8px rgba(245, 183, 0, 0.5);
     }
     
-    main{
+  /*   main{
         display: grid;
-        grid-template-columns: 250px, auto;
-    }
+        grid-template-columns: 250px auto;
+    } */
 
     .message-container {
        grid-column: 1 span 2;
     }
 
-   /*  .sidebar {
-        grid-column: span 1;
-        
-    } */
-
-   /*  .image-content {
-        grid-column: span 3; 
-    } */
+   
  
     .mainContent .image-container:hover img {
         opacity: 0.8; 
@@ -127,14 +120,13 @@
     form {
         margin: 50px auto;
         padding: 40px;
-        width: 90%; /* Aumenta más el ancho del formulario */
-        max-width: 800px; /* Establece un ancho máximo */
+        width: 80%;
+        max-width: 800px; 
         background-color: #fff;
         border-radius: 8px;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
         color: #333;
-        grid-column: span 1; /* Ocupar dos columnas en lugar de una */
-        grid-row: 1; /* Ubicar el formulario en la primera fila */
+        grid-column: span 2;
     }
     
     form label {
@@ -177,11 +169,26 @@
     form input[type="submit"]:hover {
         background-color: #2980b9;
     }
-    
-    section {
-        grid-column: span 2; /* Ocupar dos columnas */
-        grid-row: 1;/* Mover la sección de membresías al inicio del grid */
+
+    .tiers {
+        grid-column: span 2; 
     }
+    
+    .thank-you-section {
+    
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Ocupa el 100% del alto de la ventana */
+      }
+      
+      /* Estilos adicionales para la sección de agradecimiento */
+      .thank-you-section {
+        text-align: center;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      }
+      
 }
     
 
