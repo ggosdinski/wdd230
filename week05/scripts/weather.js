@@ -31,7 +31,7 @@ function displayResults(data) {
 
   weatherIcon.setAttribute('src', iconsrc); 
   weatherIcon.setAttribute('alt', desc); 
-  captionDesc.textContent = desc; 
+  captionDesc.textContent = desc; // Muestra la descripción del clima
 }
 
-apiFetch();
+apiFetch(); // Llama a la función principal para obtener datos del clima

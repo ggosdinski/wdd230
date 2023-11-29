@@ -103,4 +103,30 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
   }
 });
 
+/*WEATHER*/
+const apiKey = "895801a420abe9b45deb9903b0a12d76";
+const city = 'Lima,PE'; // Ciudad y código de país para Lima, Perú
 
+// Usar las coordenadas de Lima, Perú
+const latitude = -12.0464; 
+const longitude = -77.0428;
+const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+
+fetch(url) 
+  .then(response => response.json())
+  .then(data => {
+    const temperature = data.main.temp;
+    const description = data.weather[0].description;
+    const icon = data.weather[0].icon;
+
+    // Actualizar el contenido del elemento HTML con la información meteorológica
+    const weatherElement = document.getElementById('weather');
+    weatherElement.innerHTML = `
+      <p>Temperature: <span>${temperature}°C</span></p>
+      <p>Description: <span>${description}</span></p>
+      <img src="https://openweathermap.org/img/w/${icon}.png" alt="Weather Icon">
+    `;
+  })
+  .catch(error => {
+    console.error('Error al obtener datos meteorológicos:', error);
+  });
