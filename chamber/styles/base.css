@@ -15,13 +15,6 @@ body {
     padding: 20px;
 }
 
- .sidebar {
-    grid-column: span 1; /* Ocupa 1 columna */
-}
-
-.image-content {
-    grid-column: span 3; /* Ocupa 3 columnas */
-}
 
 .demographics-info,
 .attractions-info,
@@ -220,4 +213,20 @@ form input[type="submit"] {
 
 form input[type="submit"]:hover {
     background-color: #2980b9;
+}
+
+#grid-container2 {
+    display: grid;
+    grid-template-columns: 1fr; /* Reducción a 4 columnas */
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    padding: 20px;
+}
+
+.sidebar {
+    grid-column: span 1; /* Ocupa 1 columna */
+}
+
+.image-content {
+    grid-column: span 1; /* Ocupa 3 columnas */
 }

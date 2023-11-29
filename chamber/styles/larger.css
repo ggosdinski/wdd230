@@ -48,7 +48,7 @@
     } */
 
     .message-container {
-       grid-column: 1 span 2;
+       grid-column: 1 span 1;
     }
 
    
@@ -188,6 +188,23 @@
         border-radius: 8px;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
       }
+
+      #grid-container2 {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); /* Utilizando minmax para que ocupen el espacio disponible */
+        grid-template-rows: auto;
+        grid-gap: 10px;
+        padding: 20px;
+    }
+
+    .sidebar {
+        grid-column: 1; /* Ocupa la primera columna */
+    }
+
+    .image-content {
+        grid-column: 2; /* Ocupa la segunda columna */
+    }
+    
       
 }
     
