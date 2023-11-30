@@ -105,12 +105,12 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
 
 /*WEATHER*/
 const apiKey = "895801a420abe9b45deb9903b0a12d76";
-const city = 'Lima,PE'; // Ciudad y código de país para Lima, Perú
-
+/* const city = 'Lima,PE';
+ */
 // Usar las coordenadas de Lima, Perú
 const latitude = -12.0464; 
 const longitude = -77.0428;
-const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}`;
 
 fetch(url) 
   .then(response => response.json())
@@ -130,3 +130,45 @@ fetch(url)
   .catch(error => {
     console.error('Error al obtener datos meteorológicos:', error);
   });
+
+
+
+/*JSON*/ 
+const learningActivities = document.querySelector('.large-card ul');
+
+// URL del archivo JSON
+const linksURL = './data/links.json';
+
+
+async function getLinks() {
+  try {
+    const response = await fetch(linksURL);
+    const data = await response.json();
+    displayLinks(data.weeks);
+  } catch (error) {
+    console.error('Error al obtener los datos:', error);
+  }
+}
+
+function displayLinks(weeks) {
+  weeks.forEach(week => {
+    const weekListItem = document.createElement('li');
+    const weekAnchor = document.createElement('a');
+    weekAnchor.textContent = week.week + ":";
+
+    week.links.forEach(link => {
+      const linkListItem = document.createElement('li');
+      const linkAnchor = document.createElement('a');
+      linkAnchor.setAttribute('href', link.url);
+      linkAnchor.textContent = link.title;
+      linkListItem.appendChild(linkAnchor);
+      weekListItem.appendChild(linkListItem);
+    });
+
+    weekListItem.appendChild(weekAnchor);
+    learningActivities.appendChild(weekListItem);
+  });
+}
+
+// Llama a la función para obtener y mostrar los enlaces de las actividades
+getLinks();
