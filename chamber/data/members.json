@@ -1,0 +1,85 @@
+{
+    "miembros": [
+      {
+        "nombre": "Empresa Alpha",
+        "direccion": "Av. Corrientes 1234, Buenos Aires, Argentina",
+        "telefono": "+54 9 11 2345-6789",
+        "sitio_web": "http://www.empresaAlpha.com.ar",
+        "imagen": "./images/1.jpg",
+        "nivel_de_membresia": "Platinum",
+        "additional_info": "Leading technology company",
+        "rubro": "Technology"
+      },
+      {
+        "nombre": "Empresa Beta",
+        "direccion": "Calle Florida 567, Córdoba, Argentina",
+        "telefono": "+54 9 351 9876-5432",
+        "sitio_web": "http://www.empresaBeta.com.ar",
+        "imagen": "./images/2.jpg",
+        "nivel_de_membresia": "Gold",
+        "additional_info": "Financial services provider",
+        "rubro": "Finance"
+      },
+      {
+        "nombre": "Empresa Gamma",
+        "direccion": "Av. San Martín 890, Rosario, Argentina",
+        "telefono": "+54 9 341 6543-2109",
+        "sitio_web": "http://www.empresaGamma.com.ar",
+        "imagen": "./images/3.jpg",
+        "nivel_de_membresia": "Silver",
+        "additional_info": "Chemical products manufacturing",
+        "rubro": "Chemicals"
+      },
+      {
+        "nombre": "Empresa Delta",
+        "direccion": "Av. Libertador 4321, Mendoza, Argentina",
+        "telefono": "+54 9 261 8901-2345",
+        "sitio_web": "http://www.empresaDelta.com.ar",
+        "imagen": "./images/4.jpg",
+        "nivel_de_membresia": "Bronze",
+        "additional_info": "Software development",
+        "rubro": "Technology"
+      },
+      {
+        "nombre": "Empresa Epsilon",
+        "direccion": "Calle Belgrano 999, Salta, Argentina",
+        "telefono": "+54 9 387 7654-3210",
+        "sitio_web": "http://www.empresaEpsilon.com.ar",
+        "imagen": "./images/5.jpg",
+        "nivel_de_membresia": "Gold",
+        "additional_info": "Consultancy services",
+        "rubro": "Consultancy"
+      },
+      {
+        "nombre": "Empresa Zeta",
+        "direccion": "Av. Rivadavia 5678, San Juan, Argentina",
+        "telefono": "+54 9 264 5432-1098",
+        "sitio_web": "http://www.empresaZeta.com.ar",
+        "imagen": "./images/6.jpg",
+        "nivel_de_membresia": "Platinum",
+        "additional_info": "Retail business",
+        "rubro": "Retail"
+      },
+      {
+        "nombre": "Empresa Eta",
+        "direccion": "Av. 9 de Julio 2468, La Plata, Argentina",
+        "telefono": "+54 9 221 8765-4321",
+        "sitio_web": "http://www.empresaEta.com.ar",
+        "imagen": "./images/7.jpg",
+        "nivel_de_membresia": "Silver",
+        "additional_info": "Automotive industry",
+        "rubro": "Automotive"
+      },
+      {
+        "nombre": "Empresa Theta",
+        "direccion": "Calle Sarmiento 333, Neuquén, Argentina",
+        "telefono": "+54 9 299 4321-8765",
+        "sitio_web": "http://www.empresaTheta.com.ar",
+        "imagen": "./images/8.jpg",
+        "nivel_de_membresia": "Bronze",
+        "additional_info": "Logistics services",
+        "rubro": "Logistics"
+      }
+    ]
+  }
+  

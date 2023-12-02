@@ -205,7 +205,23 @@
         grid-column: 2; /* Ocupa la segunda columna */
     }
     
-      
+    #member-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 10px;
+        padding: 20px;
+        margin: 0 auto;
+       
+    }
+    
+    /* Estilos para los elementos de los miembros */
+    .member {
+        border: 1px solid #ccc;
+        padding: 20px;
+    }
+     
 }
+    
     
 
