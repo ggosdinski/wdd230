@@ -93,8 +93,6 @@ function checkPasswordMatch() {
     confirm_password.classList.remove("error");
   }
 }
-
-
 document.getElementById('myForm').addEventListener('submit', function(event) {
   const emailInput = document.getElementById('email');
   if (!emailInput.checkValidity()) {
@@ -104,10 +102,7 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
 });
 
 /*WEATHER*/
-const apiKey = "895801a420abe9b45deb9903b0a12d76";
-/* const city = 'Lima,PE';
- */
-// Usar las coordenadas de Lima, Perú
+/* const apiKey = "895801a420abe9b45deb9903b0a12d76";
 const latitude = -12.0464; 
 const longitude = -77.0428;
 const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}`;
@@ -129,16 +124,16 @@ fetch(url)
   })
   .catch(error => {
     console.error('Error al obtener datos meteorológicos:', error);
-  });
+  }); */
 
 
+  
 
 /*JSON*/ 
 const learningActivities = document.querySelector('.large-card ul');
 
 // URL del archivo JSON
 const linksURL = './data/links.json';
-
 
 async function getLinks() {
   try {
