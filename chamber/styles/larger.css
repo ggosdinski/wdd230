@@ -65,9 +65,15 @@
     }
 
     /* Secciones primera y segunda */
-    .first-section,
-    .second-section {
-        grid-column: span 2; 
+    .first-section/* ,
+    .second-section */ {
+        grid-column: span 3; 
+    }
+    .second-section{
+        grid-column:  span 1;
+        box-shadow: 0 0 8px rgba(245, 183, 0, 0.5);
+        border-radius: 15px;
+        text-align: center;
     }
 
     /* Sección final ocupa toda la pantalla */

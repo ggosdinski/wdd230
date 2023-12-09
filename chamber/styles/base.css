@@ -78,6 +78,7 @@ nav li a{
     font-size: 24px;
     transition: transform 0.8s ease, filter 0.8s ease;
     box-shadow: 0 0 8px rgba(245, 183, 0, 0.5);
+    border-radius: 15px;
 }
 
 /* .hero-image:hover {
@@ -122,6 +123,28 @@ footer {
     background-color:#24334A;
     padding: 10px; 
 }
+
+.second-section{
+    box-shadow: 0 0 8px rgba(245, 183, 0, 0.5);
+    border-radius: 15px;
+    text-align: center;
+}
+
+.banner {
+     /*  display: none; */
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #DC0073;
+      padding: 10px;
+      text-align: center;
+      z-index: 999;
+  }
+  
+  .close-btn {
+      cursor: pointer;
+  }
 
 .footer-container {
     /* Elimina el uso de flex y agrega margen inferior para separar los dos bloques */

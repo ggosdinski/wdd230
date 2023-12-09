@@ -18,7 +18,7 @@
 <body>
     <div id="grid-container">
         <header>
-            <h1>Header
+            <h1>Chamber of Commerce of Buenos Aires
               <div class="menu-toggle">&#9776;</div>
             </h1>
             <nav>
@@ -31,26 +31,78 @@
             </nav>
         </header>
 
-        <div class="hero-image">Hero Image</div>
+        <div class="hero-image"></div>
 
         <main>
-            <h2>Main</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti explicabo aut rem, doloribus ullam amet quae obcaecati quo sed deserunt hic id quisquam inventore possimus cum, odio a? Illo, sit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos cupiditate libero possimus distinctio porro et doloribus, debitis qui facere corrupti culpa beatae accusantium quos, suscipit numquam nihil deserunt quaerat nesciunt. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta sint ducimus id animi porro. Dignissimos officia hic corrupti iusto porro omnis corporis accusantium unde repudiandae fugit, laborum eum delectus architecto!</p>
+            <h2>Welcome to the Chamber of Commerce of Buenos Aires</h2>
+            
+            <p>Established over a century ago, we're dedicated to fostering business growth and opportunity in Buenos Aires. Our mission is to empower businesses through advocacy, education, and collaboration.</p>
+            
+            <p>Throughout our history, we've:</p>
+            
+            <ul>
+                <li>Advocated for policies that facilitate trade and business operations.</li>
+                <li>Facilitated networking events resulting in strategic alliances and partnerships.</li>
+                <li>Nurtured startups and provided essential resources for their growth.</li>
+                <li>Championed sustainability and corporate social responsibility initiatives.</li>
+            </ul>
+            
+            <p>Looking forward, our vision is to:</p>
+            
+            <ul>
+                <li>Strengthen advocacy efforts for innovation and competitiveness.</li>
+                <li>Expand educational programs tailored for businesses in a dynamic market.</li>
+                <li>Enhance networking opportunities and global partnerships.</li>
+                <li>Continue driving social impact initiatives within the community.</li>
+            </ul>
+            
+            <p>Join us in shaping the future of commerce in Buenos Aires. Together, let's build a thriving business community ready for the challenges of tomorrow.</p>
         </main>
         <a href="https://ggosdinski.github.io/wdd230/chamber/join.html" class="cta-button">Join the Chamber</a>
 
         <section class="first-section">
-            <p>Events</p>
+           <!--  <p>Events</p> -->
+            <div class="event">
+                <h2>Food Expo 2023</h2>
+                <p>Join us at the annual Food Expo from September 15th to September 18th, 2023. Discover a culinary extravaganza featuring the best of local and international cuisines. This event is a perfect platform for food industry professionals, offering opportunities for networking, showcasing products, and exploring the latest food trends.</p>
+                <p>Location: Buenos Aires Convention Center</p>
+                <p>Don't miss out on this gastronomic celebration!</p>
+                <img src="./images/adultos-jovenes-fiesta-barrio.jpg" alt="Food Expo 2023">
+            </div>
+            
+            <div class="event">
+                <h2>Buenos Aires Shopping Festival</h2>
+                <p>Get ready for a shopping extravaganza during the Buenos Aires Shopping Festival, running from November 10th to November 20th, 2023. Enjoy exclusive discounts, special offers, and exciting deals from a wide array of retailers across the city.</p>
+                <p>Experience the thrill of savings and make the most of this shopping spree!</p>
+                <img src="./images/7626831.jpg" alt="Buenos Aires Shopping Festival">
+            </div>
         </section>
 
         <section class="second-section">
-            <p>Weather</p>
+            <h2>Weather</h2>
+            <div class="weather">
+                <div class="current-weather">
+                    <h3>Current Weather</h3>
+                    <p id="current-temp"></p>
+                    <p id="current-description"></p>
+                </div>
+                <div class="forecast">
+                    <h3>3-Day Forecast</h3>
+                    <div id="forecast-data"></div>
+                </div>
+            </div>
         </section>
 
         <section class="last-Section">
-          <p>Advertisements</p>
+            <h2>Spotlight Advertisements</h2>
+            <div class="spotlight-advertisements" id="spotlightAds"></div>
         </section>
 
+        <div id="banner" class="banner">
+            <p>Join us at our Chamber of Commerce event! Wednesday at 7:00 p.m.</p>
+            <span class="close-btn" onclick="closeBanner()">❌</span>
+        </div>
+        
         <footer>
           <div class="footer-container">
               <div class="contact-info">
