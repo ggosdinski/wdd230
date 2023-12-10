@@ -130,6 +130,15 @@ footer {
     text-align: center;
 }
 
+
+/* Reglas CSS para hacer las imágenes responsivas */
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
 .banner {
      /*  display: none; */
       position: fixed;
