@@ -192,7 +192,7 @@ form {
     width: 95%; /* Aumenta el ancho del formulario */
     max-width: 100%; /* Establece un ancho máximo */
     background-color: #fff;
-    border-radius: 8px;
+    border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     color: #333;
 }
@@ -261,10 +261,19 @@ form input[type="submit"]:hover {
 .member {
     border: 1px solid #ccc;
     padding: 20px;
+    border-radius: 15px;
+    /* margin: 0 auto; */
 }
 
 .member img {
-    max-width: 100%; /* Asegura que la imagen se ajuste al ancho del contenedor */
-    height: auto; /* Mantiene la proporción de aspecto original */
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+    border-radius: 15px;
+    transition: filter 0.3s ease; 
 }
 
+.member img:hover {
+    filter: brightness(120%); 
+}

@@ -62,6 +62,7 @@
     .cta-button {
         grid-column: 1 / span 4; 
         margin: 0 auto; 
+        border-radius: 15px;
     }
 
     /* Secciones primera y segunda */
@@ -69,13 +70,17 @@
     .second-section */ {
         grid-column: span 3; 
     }
-    .second-section{
-        grid-column:  span 1;
+
+
+    .second-section {
+        grid-column: span 1;
         box-shadow: 0 0 8px rgba(245, 183, 0, 0.5);
         border-radius: 15px;
         text-align: center;
+        align-items: center;
+        justify-content: center;
     }
-
+    
     /* Sección final ocupa toda la pantalla */
     .last-section {
         grid-column: span 4; 
@@ -133,6 +138,7 @@
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
         color: #333;
         grid-column: span 2;
+        border-radius: 15px;
     }
     
     form label {
@@ -151,6 +157,7 @@
         border: 1px solid #ccc;
         box-sizing: border-box;
         font-size: 1em;
+        
     }
 
     form .error-message {
@@ -218,13 +225,13 @@
         grid-gap: 10px;
         padding: 20px;
         margin: 0 auto;
-       
     }
     
     /* Estilos para los elementos de los miembros */
     .member {
         border: 1px solid #ccc;
         padding: 20px;
+        border-radius: 15px;
     }
      
 }
